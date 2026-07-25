@@ -1,0 +1,19 @@
+# Binaries / build output
+*.exe
+*.test
+*.out
+/dist/
+/bin/
+
+# Go
+vendor/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Local xcaddy / test artifacts
+**/tests/with-caddy/.bin/
+**/tests/with-caddy/.bind-data/

@@ -1,0 +1,13 @@
+{
+	auto_https off
+	admin localhost:2019
+}
+
+:8080 {
+	rolling_deployment {
+		secret {$ROLLING_DEPLOY_SECRET:test-secret}
+		docker_hosts {$DOCKER_HOST}
+	}
+
+	respond "rolling_deployment test caddy is up" 200
+}
